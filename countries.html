@@ -1,33 +1,303 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html>
     <head>
         <title>Countries | Adam Travels</title>
         <link rel="stylesheet" href="main.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon2.bmp">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+<!-- header -->
         <header>
-            <a href="index.html"><img src="images/logo.png" alt="my logo" /></a>
-            <nav class="navigation">
-                <input type="radio" id="countries" name="navigation" checked>
-                <label for="countries"><a href="countries.html">COUNTRIES</a></label>
-                <input type="radio" id="continents" name="navigation">
-                <label for="continents"><a href="continents.html">CONTINENTS</a></label>
-                <input type="radio" id="gallery" name="navigation"> 
-                <label for="gallery"><a href="gallery.html">GALLERY</a></label>
-                <input type="radio" id="next trips" name="navigation"> 
-                <label for="next trips"><a href="next.html">NEXT TRIPS</a></label>
-                <input type="radio" id="about" name="navigation">
-                <label for="about"><a href="about.html">ABOUT ME</a></label>
+            <div class="menu_logo">
+
+                <!-- Mobile Phone Menu start -->
+                <!-------------------- -->
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="countries.html">Countries</a>
+                        <a href="cities.html">Cities</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="next.html">Next Trips</a>
+                        <a href="about.html">About Me</a>
+                    </div>
+                </div>
+                
+                <span class="menu_btn" onclick="openNav()">&#9776</span>
+                <script>
+                function openNav() {
+                    document.getElementById("myNav").style.width = "100%";
+                }
+                
+                function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                }
+                </script>
+
+                <!-- Mobile Phone Menu end -->
+                <!------------------ --> 
+
+                <a href="index.html">
+                    <img class="logo" src="images/logo.png" alt="Adam Travels logo" />
+                </a>
+            </div>
+            
+
+            <nav>
+                <div class="navigation">
+                    <div class="radio_div">
+                        <input type="radio" id="countries" name="navigation" value="countries">
+                        <label for="countries"><a href="countries.html">COUNTRIES</a></label>
+                    </div>
+
+                    <div class="radio_div">
+                        <input type="radio" id="cities" name="navigation" value="cities">
+                        <label for="cities"><a href="cities.html">CITIES</a></label>
+                    </div>
+
+                    <div class="radio_div">
+                        <input type="radio" id="gallery" name="navigation" value="gallery">
+                        <label for="gallery"><a href="gallery.html">GALLERY</a></label>
+                    </div>
+
+                    <div class="radio_div">
+                        <input type="radio" id="nexttrips" name="navigation" value="nexttrips">
+                        <label for="nexttrips"><a href="next.html">NEXT TRIPS</a></label>
+                    </div>
+
+                    <div class="radio_div">
+                        <input type="radio" id="about" name="navigation" value="about">
+                        <label for="about"><a href="about.html">ABOUT ME</a></label>
+                    </div>
+                </div>
             </nav>
         </header>
 
+<!-- main content -->
         <main>
-            <p>
-               countries
+            
+        <!-- EUROPE -->
+            <h1 class="country_title">EUROPE</h1>
+            <div class="grid">
 
-            </p>
-        </main>
+                <!-- AUSTRIA -->
+                <div class="card">
+                    <img src="images/cities/vienna1.jpeg" alt="Vienna" />
+                    <div class="card_container">
+                        <h4><b>AUSTRIA</b></h4> 
+                        <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem perspiciatis,
+                            repellendus deleniti voluptates sequi totam odio officia? Modi ea eligendi omnis 
+                            voluptatibus voluptate maxime ipsum rem facere libero inventore.</p> 
+                        <div class="card_bottom">
+                            <p class="chip green">1d</p>
+                            <p class="chip grey">city</p>
+                            <p class="chip grey">nature</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FINLAND -->
+                <div class="card">
+                    <img src="images/cities/rovaniemi1.jpg" alt="Rovaniemi" />
+                    <div class="card_container">
+                        <h4><b>FINLAND</b></h4> 
+                        <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem perspiciatis,
+                            repellendus deleniti voluptates sequi totam odio officia? Modi ea eligendi omnis 
+                            voluptatibus voluptate maxime ipsum rem facere libero inventore.</p> 
+                        <div class="card_bottom">
+                            <p class="chip green">10y</p>
+                            <p class="chip grey">home</p>
+                            <p class="chip grey">nature</p>
+                            <p class="chip grey">family</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITALY -->
+                <div class="card">
+                    <img src="images/cities/florence1.jpg" alt="Florence" />
+                    <div class="card_container">
+                        <h4><b>ITALY</b></h4> 
+                        <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem perspiciatis,
+                            repellendus deleniti voluptates sequi totam odio officia? Modi ea eligendi omnis 
+                            voluptatibus voluptate maxime ipsum rem facere libero inventore.</p> 
+                        <div class="card_bottom">
+                            <p class="chip green">10d</p>
+                            <p class="chip grey">city</p>
+                            <p class="chip grey">nature</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SPAIN -->
+                <div class="card">
+                    <img src="images/cities/mallorca1.jpg" alt="Mallorca" />
+                    <div class="card_container">
+                        <h4><b>SPAIN</b></h4> 
+                        <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem perspiciatis,
+                            repellendus deleniti voluptates sequi totam odio officia? Modi ea eligendi omnis 
+                            voluptatibus voluptate maxime ipsum rem facere libero inventore.</p> 
+                        <div class="card_bottom">
+                            <p class="chip green">10d</p>
+                            <p class="chip grey">nature</p>
+                        </div>
+                    </div>
+                </div>                
+
+            <!-- SLOVAKIA -->
+                <div class="card">
+                    <img src="images/cities/bratislava1.jpg" alt="bratislava" />
+                    <div class="card_container">
+                        <h4><b>SLOVAKIA</b></h4> 
+                        <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem perspiciatis,
+                            repellendus deleniti voluptates sequi totam odio officia? Modi ea eligendi omnis 
+                            voluptatibus voluptate maxime ipsum rem facere libero inventore.</p> 
+                        <div class="card_bottom">
+                            <p class="chip green">7 weeks</p>
+                            <p class="chip grey">family</p>
+                        </div>
+                    </div>
+                </div> 
+
+
+                    <!-- ESTONIA -->
+                    <div class="card">
+                        <img src="images/cities/tallinn1.jpg" alt="Tallinn" />
+                        <div class="card_container">
+                            <h4><b>Estonia</b></h4> 
+                            <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem perspiciatis,
+                                repellendus deleniti voluptates sequi totam odio officia? Modi ea eligendi omnis 
+                                voluptatibus voluptate maxime ipsum rem facere libero inventore.</p> 
+                            <div class="card_bottom">
+                                <p class="chip green">1 d</p>
+                                <p class="chip grey">city</p>
+                            </div>
+                        </div>
+                    </div> 
+    
+      <!-- SWITZERLAND -->
+      <div class="card">
+        <img src="images/cities/lugano1.png" alt="Lugano" />
+        <div class="card_container">
+            <h4><b>Switzerland</b></h4> 
+            <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem perspiciatis,
+                repellendus deleniti voluptates sequi totam odio officia? Modi ea eligendi omnis 
+                voluptatibus voluptate maxime ipsum rem facere libero inventore.</p> 
+            <div class="card_bottom">
+                <p class="chip green">1 d</p>
+                <p class="chip grey">city</p>
+            </div>
+        </div>
+    </div> 
+
+
+
+     
+
+
+
+          <!-- LATVIA -->
+          <div class="card">
+            <img src="images/cities/riga1.jpg" alt="Riga" />
+            <div class="card_container">
+                <h4><b>Latvia</b></h4> 
+                <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem perspiciatis,
+                    repellendus deleniti voluptates sequi totam odio officia? Modi ea eligendi omnis 
+                    voluptatibus voluptate maxime ipsum rem facere libero inventore.</p> 
+                <div class="card_bottom">
+                    <p class="chip green">1 d</p>
+                    <p class="chip grey">city</p>
+                </div>
+            </div>
+        </div> 
+
+
+
+           <!-- VATICAN -->
+           <div class="card">
+            <img src="images/cities/vatican1.jpg" alt="Vatican" />
+            <div class="card_container">
+                <h4><b>Vatican</b></h4> 
+                <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem perspiciatis,
+                    repellendus deleniti voluptates sequi totam odio officia? Modi ea eligendi omnis 
+                    voluptatibus voluptate maxime ipsum rem facere libero inventore.</p> 
+                <div class="card_bottom">
+                    <p class="chip green">1 d</p>
+                    <p class="chip grey">city</p>
+                </div>
+            </div>
+        </div> 
+
+            </div>
+
+        <!-- ASIA -->
+            <h1 class="country_title">ASIA</h1>
+            <div class="grid">
+
+                <!-- INDIA -->
+                <div class="card">
+                    <img src="images/cities/aligarh1.jpg" alt="Aligarh" />
+                    <div class="card_container">
+                        <h4><b>INDIA</b></h4> 
+                        <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem perspiciatis,
+                            repellendus deleniti voluptates sequi totam odio officia? Modi ea eligendi omnis 
+                            voluptatibus voluptate maxime ipsum rem facere libero inventore.</p> 
+                        <div class="card_bottom">
+                            <p class="chip green">2d</p>
+                            <p class="chip grey">family</p>
+                            <p class="chip grey">city</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- UAE -->
+                <div class="card">
+                    <img src="images/cities/dubai1.jpg" alt="Dubai" />
+                    <div class="card_container">
+                        <h4><b>UAE</b></h4> 
+                        <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem perspiciatis,
+                            repellendus deleniti voluptates sequi totam odio officia? Modi ea eligendi omnis 
+                            voluptatibus voluptate maxime ipsum rem facere libero inventore.</p> 
+                        <div class="card_bottom">
+                            <p class="chip green">3 m</p>
+                            <p class="chip grey">nightlife</p>
+                            <p class="chip grey">family</p>
+                            <p class="chip grey">city</p>
+                        </div>
+                    </div>
+                </div>
+</div>
+        <!-- NORTH AMERICA -->
+        <h1 class="country_title">NORTH AMERICA</h1>
+        <div class="grid">
+
+
+
+                <!-- CANADA -->
+                <div class="card">
+                    <img src="images/cities/niagara1.jpg" alt="Toronto" />
+                    <div class="card_container">
+                        <h4><b>Canada</b></h4> 
+                        <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem perspiciatis,
+                            repellendus deleniti voluptates sequi totam odio officia? Modi ea eligendi omnis 
+                            voluptatibus voluptate maxime ipsum rem facere libero inventore.</p> 
+                        <div class="card_bottom">
+                            <p class="chip green">1 week</p>
+                            <p class="chip grey">nightlife</p>
+                            <p class="chip grey">family</p>
+                            <p class="chip grey">city</p>
+                        </div>
+                    </div>
+                </div>
+
+
         
+
+            </div>
+        </main>
+
     </body>
 </html>

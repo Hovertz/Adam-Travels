@@ -1,31 +1,83 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html>
     <head>
         <title>Next Trips | Adam Travels</title>
         <link rel="stylesheet" href="main.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon2.bmp">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+<!-- header -->
         <header>
-            <a href="index.html"><img src="images/logo.png" alt="my logo" /></a>
-            <nav class="navigation">
-                <input type="radio" id="countries" name="navigation" checked>
-                <label for="countries"><a href="countries.html">COUNTRIES</a></label>
-                <input type="radio" id="continents" name="navigation">
-                <label for="continents"><a href="continents.html">CONTINENTS</a></label>
-                <input type="radio" id="gallery" name="navigation"> 
-                <label for="gallery"><a href="gallery.html">GALLERY</a></label>
-                <input type="radio" id="next trips" name="navigation" checked> 
-                <label for="next trips"><a href="next.html">NEXT TRIPS</a></label>
-                <input type="radio" id="about" name="navigation">
-                <label for="about"><a href="about.html">ABOUT ME</a></label>
+            <div class="menu_logo">
+
+                <!-- Mobile Phone Menu start -->
+                <!-------------------- -->
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="countries.html">Countries</a>
+                        <a href="cities.html">Cities</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="next.html">Next Trips</a>
+                        <a href="about.html">About Me</a>
+                    </div>
+                </div>
+                
+                <span class="menu_btn" onclick="openNav()">&#9776</span>
+                <script>
+                function openNav() {
+                    document.getElementById("myNav").style.width = "100%";
+                }
+                
+                function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                }
+                </script>
+
+                <!-- Mobile Phone Menu end -->
+                <!------------------ --> 
+
+                <a href="index.html">
+                    <img class="logo" src="images/logo.png" alt="Adam Travels logo" />
+                </a>
+            </div>
+            
+
+            <nav>
+                <div class="navigation">
+                    <div class="radio_div">
+                        <input type="radio" id="countries" name="navigation" value="countries">
+                        <label for="countries"><a href="countries.html">COUNTRIES</a></label>
+                    </div>
+
+                    <div class="radio_div">
+                        <input type="radio" id="cities" name="navigation" value="cities">
+                        <label for="cities"><a href="cities.html">CITIES</a></label>
+                    </div>
+
+                    <div class="radio_div">
+                        <input type="radio" id="gallery" name="navigation" value="gallery">
+                        <label for="gallery"><a href="gallery.html">GALLERY</a></label>
+                    </div>
+
+                    <div class="radio_div">
+                        <input type="radio" id="nexttrips" name="navigation" value="nexttrips">
+                        <label for="nexttrips"><a href="next.html">NEXT TRIPS</a></label>
+                    </div>
+
+                    <div class="radio_div">
+                        <input type="radio" id="about" name="navigation" value="about">
+                        <label for="about"><a href="about.html">ABOUT ME</a></label>
+                    </div>
+                </div>
             </nav>
         </header>
 
         <main>
             <p>
-               Next Trips
-
+                next trips
             </p>
         </main>
         
