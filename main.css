@@ -190,7 +190,7 @@ main {
     padding: 5px 0;
     background-color: var(--bg_color);
     color: black;
-    font-family: var(--font_titles_extralight);
+    font-family: var(--font_titles_light);
     font-size: 18px;
     font-weight: normal;
     text-align: center;
@@ -219,15 +219,19 @@ main {
     border-radius: 10px 10px 0 0;
 }
 
+.card_container {
+    border-radius: 0 0 10px 10px;
+}
+
 .card_container h4 {
-    margin-top: 20px;
+    padding: 20px 0;
     text-align: center;
     font-family: var(--font_titles_extralight);
     font-size: 18px;
 }
 
 .card_description {
-    padding: 1.5vw;
+    padding: 0 0 1.5vw 1.5vw;
     font-family: var(--font_text);
     font-size: 16px;
 }
@@ -257,7 +261,34 @@ main {
     border-radius: 500px;
 }
 
+.country {
+    padding: 3vw;
+    margin-top: 3vw;
+    background-color: var(--bg_color);
+    border-radius: 10px;
+}
 
+.country h1 {
+    margin: 0 0 3vw 0;
+    border-radius: 10px;
+    background-color: var(--bg_color_grid);
+}
+
+.country .card_container {
+    background-color: var(--bg_color_grid);
+}
+
+.about {
+    padding-top: 3vw;
+}
+
+.about p {
+    font-family: var(--font_text);
+}
+
+.about_img {
+    grid-column: 1 / span 2;
+}
 
 
 
