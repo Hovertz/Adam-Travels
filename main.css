@@ -509,7 +509,7 @@ main {
     }
     .about p {
         font-size: calc(14px + 2 * ((100vw - 768px) / (992 - 768)));
-        grid-column: 3 / span 1;
+        grid-column: 1 / span 2;
     }
     .about_img {
         grid-column: 1 / span 2;
